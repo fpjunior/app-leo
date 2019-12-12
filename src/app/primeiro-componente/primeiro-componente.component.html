@@ -1,6 +1,35 @@
 <div class="bg">
+    <p>----manipulando componentes----</p>
     <h3>
         Meu primeiro componente
     </h3>
-    <p> agora vai</p>
+    <p> estudando angular</p>
+</div>
+
+<br>
+
+<div>
+    <p>----manipulando variáveis----</p>
+    <h4> {{meutitulo}}</h4>
+    <p>{{10+20}}</p>
+    <p>olá pessoal {{texto1+texto2}}</p>
+    
+</div>
+<br>
+<div>
+    <p>----chamando uma função----</p>
+    <p>{{geraTexto()}}</p>
+</div>
+<br>
+<div>
+    <p>----chamando um objeto----</p>
+    <p>codigo: {{cliente.id}}</p>
+    <p>nome: {{cliente.nome}}</p>
+</div>
+
+<br>
+<p>-----chamando um array com laço de repetição----</p>
+<div *ngFor= "let umCliente of clientes">
+    <p *ngIf = "umCliente.ativo">{{umCliente.id}} - {{umCliente.nome}}</p>
+
 </div>
